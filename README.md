@@ -11,7 +11,7 @@ link to website: https://siennabienna.github.io/workshop_8/
 
 # Finding my IP Adress as practice of using an API
 
-I first opened the ipify website and found the json API URL. I then made a simple sketch that would allow me to see my IP, to check I was retrieving the data correctly.
+I first opened the ipify website and found the API URL. I then made a simple sketch that would allow me to see my IP, to check I was retrieving the data correctly.
 
 ```js
 let ip;
@@ -71,7 +71,7 @@ function mainScreen() {
 
 Next, I had to figure out how to get a random card from the API. I found the draw card function that would allow me to generate a random card everytime the `drawCardButton` is pressed.
 
-https://deckofcardsapi.com/api/deck/<<deck_id>>/draw/?count=2 
+https://deckofcardsapi.com/api/deck/new/draw/?count=1 
 
 I put this into my code.
 
@@ -117,7 +117,7 @@ function magic() {
 }
 ```
 
-Next, I did the reveal page. This would just use the same random card from the first screen, minus `fetch`, as I didn't want to generate a new card. I then added a button that would allow for the page to be refreshed, which I took from this p5 project by lucwhite:
+Next, I did the reveal page. This would just use the same random card from the first screen, minus the API call, as I didn't want to generate a new card. I then added a button that would allow for the page to be refreshed, which I took from this p5 project by lucwhite:
 
 https://editor.p5js.org/lucwhite/sketches/zmlPLWgWZ
 
